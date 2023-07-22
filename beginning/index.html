@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold; display: block; margin-bottom: 5px;}
+        form {width: 30%; padding: 20px;}
+        /* Optional custom styling for form elements */
+        /* Add your custom CSS here */
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm">
+    <!--ID a user input-->
+    <label>
+        Employee ID (8-Digit)
+        <br>
+        <input type ="text" id = "id" name ="id" required maxlength ="8">
+    </label>
+    <br>
+     <!--Full Name  a user input-->
+    <label>
+        Full Name
+        <br>
+        <input type ="text" id ="name" name ="name" required>
+    </label>
+    <br>
+     <!--Extention a user input-->
+    <label>
+        Extention (4-Digit)
+        <br>
+        <input type = "text" id = "ext" name ="ext" requried maxlength ="4">
+    </label>
+    <br>
+     <!--Email a user input-->
+    <label>
+        Email
+        <br>
+        <input type = "email" id ="email" name = "email" required>
+        <br>
+    </label>
+
+        <!-- Department Choice -->
+    <lable>
+       Department
+       <br>
+    <select id = "departmemt" name ="department " required >
+           <!-- <option value="">Select Department</option>-->
+            <option value="Administrative">Administrative</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Executive">Executive</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Quality Assurance">Quality Assurance</option>
+            <option value="Sales">Sales</option>
+    </select>
+</label>
+<br> 
+<br>
+<!--Submit Button-->
+    <button type="submit">Add Employee</button>
+    <br>
+    </form>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
